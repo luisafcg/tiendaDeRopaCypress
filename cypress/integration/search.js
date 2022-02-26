@@ -15,4 +15,14 @@ describe ('Search elements', function(){
           cy.get(search.mensajeAlerta).should('contain', 'No results were found for your search');
         }))
     })
+
+    it ('Search for elements with special code', () =>{
+        cy.readFile('cypress/support/text/search.txt').then((text) =>{
+        cy.search(text);
+        cy.fixture('searchResults').then((search =>{
+        cy.get(search.mensajeAlerta).should('contain', 'No results were found for your search');
+          }))
+
+        })
+    })
 })

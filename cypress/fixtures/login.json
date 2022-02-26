@@ -1,0 +1,7 @@
+{
+    "optionLogin": ".login",
+    "email": "#email",
+    "password": "#passwd",
+    "buttonSignIn" : "#SubmitLogin > span",
+     "messageError" : "ol > li"
+}

@@ -1,0 +1,5 @@
+{
+    "elementSearch" : "#search_query_top",
+    "btnSearch" : "#searchbox > .btn"
+
+}
